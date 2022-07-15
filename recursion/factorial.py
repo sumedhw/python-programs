@@ -1,12 +1,10 @@
 
-from math import factorial
-
-
-def factorial(n):
+def fact(n):
+    assert n>=0 and int(n) == n, "Fibonacci number cannot be negative number or non integer"
     if n<1:
         return 1
     else:
-        return n * factorial(n-1)
+        return n * fact(n-1)
 
 
-print(factorial(4))
+print(fact(4))
